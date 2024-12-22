@@ -2,9 +2,13 @@ import React from 'react'
 import Link from "next/link";
 import { MotionTransition } from "./transition-component";
 import { socialNetworks } from '@/data';
+import LanguageSwitcher from './LanguageSwitcher';
 
  const Header = () => {
+    
+
   return (
+    
     <MotionTransition position="bottom" className="absolute z-40 inline-block w-full top-5 md:top-10 px-20">
 
         <header>
@@ -28,9 +32,12 @@ import { socialNetworks } from '@/data';
                         >
                         
                         {logo}
+                        
                         </Link>
 
                     ))}
+
+                    <LanguageSwitcher />
                 </div>
 
 

@@ -46,24 +46,24 @@ export const itemsNavbar = [
 export const dataAboutPage = [
     {
         id: 1,
-        title: "FullStack Developer",
+        title: "titlePuesto1",
         subtitle: "Indra",
-        description: "En 2023 pasé a un proyecto de Inditex en el que trabajamos con tecnolgías actuales como java 21, docker, github, sonar, git, postgreSQL, DB2 ( en algunos proyectos ). En este proyecto formo parte de un equipo muy grande de 40 personas en el que trabajamos usando SCRUM y llevamos a cabo nuevos desarrollos para Inditex. Priorizando la calidad del codigo y la eficiencia de las consultas para poder soportar tal volumen de carga.",
-        date: "Currently ",
+        description: "descriptionPuesto1",
+        date: "datePuesto1",
     },
     {
         id: 2,
-        title: "FullStack Developer",
+        title: "titlePuesto2",
         subtitle: "Indra",
-        description: "En Indra, comencé trabajando mi primer año para un cliente con el que trabajamos en un equipo de 12 personas, llevando metodologías ágiles, ahí trabajamos con Angular para la capa front y spring boot, spring JPA, spring hibernate para la capa backend. Base de datos oracle. Git para control de versiones, github, actions, sonar y docker",
-        date: "2023 ",
+        description: "descriptionPuesto2",
+        date: "datePuesto2",
     },
     {
         id: 3,
-        title: "FullStack Developer",
+        title: "titlePuesto3",
         subtitle: "Proxya",
-        description: "Empecé trabajando con Spring Boot, Spring hibernate y Spring Data JPA, en el poco tiempo que estuve me dio tiempo de emperimentar y desarrollarme profesionalmente en estos campos, trabajando en equipo con metodologías ágiles.",
-        date: "Ene 2022",
+        description: "descriptionPuesto3",
+        date: "datePuesto3",
     }
 ]
 
@@ -71,28 +71,28 @@ export const dataCounter = [
     {
         id: 0,
         endCounter: 2,
-        text: "Años de experiencia",
+        text: "counterYears",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
         endCounter: 2,
-        text: "Clientes satisfechos",
+        text: "counterClients",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
         endCounter: 5,
-        text: "Proyectos finalizados",
+        text: "counterProjects",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
         endCounter: 13,
-        text: "Proyectos trabajados",
+        text: "counterProjectsWork",
         lineRight: false,
         lineRightMobile: false,
     },
@@ -101,28 +101,28 @@ export const dataCounter = [
 export const serviceData = [
     {
         icon: <Crop />,
-        title: "Desarrollo Backend",
-        description: "Desarrollo de backend sólido, escalable, mantenible y eficiente. ",
+        title: "servicesTitle1",
+        description: "servicesDescription1",
     },
     {
         icon: <Pencil />,
-        title: "Desarrollo Frontend",
-        description: "Diseño de interfaz intuitiva para el usuario con apariencia profesional",
+        title: "servicesTitle2",
+        description: "servicesDescription2",
     },
     {
         icon: <Computer />,
-        title: "Metodologías",
-        description: "Adherido a metodologías ágiles y la forma de trabajar de SCRUM",
+        title: "servicesTitle3",
+        description: "servicesDescription3",
     },
     {
         icon: <Book />,
-        title: "Bases de datos",
-        description: "Conocimiento de numerosas bases de datos como Oracle, PostgreSQL y DB2. ",
+        title: "servicesTitle4",
+        description: "servicesDescription4",
     },
     {
         icon: <Rocket />,
-        title: "Actitud",
-        description: "Actitud proactiva, con ganas de trabajar y construir productos de alto nivel",
+        title: "servicesTitle5",
+        description: "servicesDescription5",
     },
 ];
 
@@ -275,37 +275,37 @@ export const dataSkills = [
 export const dataTestimonials = [
     {
         id: 1,
-        name: "Base de datos",
+        name: "logroName1",
         description:
-            "Reducción del 80% del tiempo de respuesta consultas de base de datos de uno de nuestros proyectos. ",
+            "logroDescription1",
         imageUrl: "/postgres.jpg",
     },
     {
         id: 2,
-        name: "Angular",
+        name: "logroName2",
         description:
-            "Coordinar el desarrollo desde 0 de una aplicación angular, tratando con equipo de diseño para implementar una app intuitiva, funcional y profesional",
+            "logroDescription2",
         imageUrl: "/angular.jpg",
     },
     {
         id: 3,
-        name: "Java",
+        name: "logroName3",
         description:
-            "Arquitectura de nueva aplicación implementada desde 0. Desarrollo de aplicaciones siguiendo los principios SOLID y manteniendo buenas practicas y documentando procesos.",
+            "logroDescription3",
         imageUrl: "/java.jpg",
     },
     {
         id: 4,
-        name: "Comuncación con cliente",
+        name: "logroName4",
         description:
-            "Reunirme con cliente para concretar aspectos de la aplicación, negociando funcionalidades y llegando a acuerdos con ellos. Generar confianza con el cliente para facilitar el trabajo",
+            "logroDescription4",
         imageUrl: "/profile4.png",
     },
     {
         id: 5,
-        name: "Docker",
+        name: "logroName5",
         description:
-            "Implementación de servicios en docker y configuración de ellos en diferentes microservicios. Añadiendo servicios importantes como caché.",
+            "logroDescription5",
         imageUrl: "/docker.jpg",
     }
 ];

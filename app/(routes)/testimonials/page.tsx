@@ -7,7 +7,10 @@ import React from 'react'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import { useTranslation } from 'react-i18next'
+
 const Testimonials = () => {
+    const { t } = useTranslation();
   return (
     <>
     <TransitionPage />
@@ -16,8 +19,8 @@ const Testimonials = () => {
         <CircleImage />
 
         <h1 className='text-2xl leading-tight text-center md:text-4xl md:mb-5'>
-            Algunos de logros
-            <span className="block font-bold text-secondary"> en el ámbito profesional</span>
+            {t("titleLogro1")}
+            <span className="block font-bold text-secondary"> {t("titleLogro2")}</span>
         </h1>
 
 
@@ -47,8 +50,8 @@ const Testimonials = () => {
                                 width={150} 
                                 height={150} 
                                 className='mx-auto rounded-full'/>
-                                <h4 className='text-center'>{name} </h4>
-                                <p className='mt-5 text-center'>{description}</p>
+                                <h4 className='text-center'>{t(name)} </h4>
+                                <p className='mt-5 text-center'>{t(description)}</p>
                         </SwiperSlide>
 
                         ))}

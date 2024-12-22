@@ -3,7 +3,10 @@ import CountUp from "react-countup"
 
 import { dataCounter } from "@/data"
 
+import { useTranslation } from "react-i18next";
+
 const CounterServices = () => {
+    const { t } = useTranslation();
   return (
         <div className="grid justify-between max-w-3xl grid-cols-2 gap-3
         mx-auto my-8 md:grid-cols-4 md:gap-6">
@@ -15,7 +18,7 @@ const CounterServices = () => {
                      `}>
                     <p className="flex mb-2 text-2xl font-extrabold md:text-4xl
                     text-secondary">+ <CountUp end={endCounter} start={0} duration={5} /></p>
-                    <p className="text-xs uppercase max-w-[100px]">{text}</p>
+                    <p className="text-xs uppercase max-w-[100px]">{t(text)}</p>
                     </div>
                 </div>
             ))}

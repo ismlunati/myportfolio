@@ -1,3 +1,4 @@
+"use client"
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -5,19 +6,21 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
+import { useTranslation } from "react-i18next";
+
+
 const ContactPage = () => {
+
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen flex items-center justify-start mt-[-100px]">
       <div className="bg-slate-300 shadow-md rounded-lg p-8 w-96 text-center">
         <h1 className="text-2xl font-bold text-gray-800 mb-4">
-          Información Personal
+          {t("contacto3")}
         </h1>
         <p className="text-gray-600 mb-6">
-          Hola, soy{" "}
-          <span className="text-indigo-500 font-semibold">Ismael Luna</span>, un
-          desarrollador de software con experiencia en tecnologías web y
-          soluciones innovadoras. Si le interesa mi perfil no dude en
-          contactarme.
+        {t("contacto4")}{" "}
+          <span className="text-indigo-500 font-semibold">Ismael Luna</span>{t("contacto5")}
         </p>
 
         <div className="flex items-center gap-2">
@@ -30,7 +33,7 @@ const ContactPage = () => {
         </div>
         <div className="flex items-center gap-2">
           <FaMapMarkerAlt className="text-indigo-500" />
-          <p className="text-gray-600">Sevilla, España</p>
+          <p className="text-gray-600">{t("contacto6")}</p>
         </div>
         <div className="flex items-center gap-2">
           <FaLinkedin className="text-indigo-500" />

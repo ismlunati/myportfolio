@@ -5,7 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { serviceData } from "@/data";
 
+import { useTranslation } from "react-i18next";
+
+
 const SliderServices = () => {
+
+  const { t } = useTranslation();
+
+  
   return (
     <Swiper
       breakpoints={{
@@ -38,11 +45,13 @@ const SliderServices = () => {
                       hover:bg-[rgba(89,65,169,0.15)] transition-all 
                       duration-300 hover:border-secondary border-2"
           >
-            <div className="mb-4 text-4xl text-secondary">{item.icon}</div>
+            <div className="mb-4 text-4xl text-secondary">{item.icon}
+            
+            </div>
 
             <div>
-              <h3 className="mb-4 text-lg">{item.title} </h3>
-              <p className="text-sm">{item.description}</p>
+              <h3 className="mb-4 text-lg">{t(item.title)} </h3>
+              <p className="text-sm">{t(item.description)}</p>
             </div>
           </div>
         </SwiperSlide>
