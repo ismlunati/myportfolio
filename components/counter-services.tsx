@@ -2,7 +2,6 @@
 import CountUp from "react-countup"
 
 import { dataCounter } from "@/data"
-import { div } from "motion/react-client"
 
 const CounterServices = () => {
   return (
