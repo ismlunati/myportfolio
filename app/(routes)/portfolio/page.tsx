@@ -1,3 +1,4 @@
+"use client"
 import AvatarPortfolio from '@/components/avatar-portfolio'
 import CircleImage from '@/components/circle-image'
 import ContainerPage from '@/components/container'
@@ -5,7 +6,10 @@ import PortfolioBox from '@/components/portfolio-box'
 import TransitionPage from '@/components/transition-page'
 import { dataSkills } from '@/data'
 
+import { useTranslation } from 'react-i18next'
+
 const PortfolioPage = () => {
+  const { t } = useTranslation()
   return (
     <ContainerPage>
         <TransitionPage />
@@ -17,8 +21,8 @@ const PortfolioPage = () => {
         <div className='flex flex-col justify-center h-full'>
             <h1 className='text-2xl leading-tight text-center 
             md:text-4xl md:mb-5'>
-                Mis  
-                <span className='text-secondary font-bold'> habilidades</span>
+                {t("skills1")}  
+                <span className='text-secondary font-bold'> {t("skills2")}</span>
                 </h1>
 
                 <div className='relative z-10 grid max-w-5xl 

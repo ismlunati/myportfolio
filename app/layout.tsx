@@ -1,12 +1,11 @@
-
 import type { Metadata } from "next";
 
 import localFont from "next/font/local";
 import "./globals.css";
-import 'swiper/css' 
-import 'swiper/css/pagination' 
-import 'swiper/css/scrollbar' 
-
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import LanguageProvider from "@/components/LanguageProvider"; // Importa el proveedor
 
 import { Navbar } from "@/components/navbar";
 import Header from "@/components/header";
@@ -37,9 +36,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
-        <Header/>
-        {children}
+        
+        <LanguageProvider>
+        <Header />
+          <Navbar />
+          {children}
+        </LanguageProvider>{" "}
+        {/* Encapsula todo en el proveedor */}
       </body>
     </html>
   );
