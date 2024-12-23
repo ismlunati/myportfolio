@@ -4,7 +4,6 @@ import Container from "@/components/container";
 import Avatar from "@/components/avatar";
 import CounterServices from "@/components/counter-services";
 import TimeLine from "@/components/time-line";
-import dynamic from "next/dynamic";
 
 
 import { useTranslation } from "react-i18next";
@@ -34,4 +33,4 @@ const PageAboutMe = () => {
   );
 }
 
-export default dynamic(() => Promise.resolve(PageAboutMe), { ssr: false });
+export default PageAboutMe;

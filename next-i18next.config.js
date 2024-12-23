@@ -1,7 +1,7 @@
 module.exports = {
-    i18n: {
-      defaultLocale: "en", // Idioma predeterminado
-      locales: ["en", "es"], // Idiomas soportados
-    },
-  };
-  
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "es"],
+    localeDetection: true, // Detecta automáticamente el idioma del navegador
+  },
+};

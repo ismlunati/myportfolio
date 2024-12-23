@@ -3,28 +3,28 @@ import { initReactI18next } from "react-i18next";
 import HttpBackend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-const isServer = typeof window === "undefined"; // Detecta si estamos en SSR
+const isServer = typeof window === "undefined";
 
 if (!isServer) {
+  i18n.use(HttpBackend); // Usa HttpBackend solo en cliente
   i18n.use(LanguageDetector); // Usa el detector solo en cliente
 }
 
 i18n
-  .use(HttpBackend) // Carga las traducciones desde archivos JSON
-  .use(initReactI18next) // Integra i18n con React
+  .use(initReactI18next) // Integración con React
   .init({
-    fallbackLng: "en", // Idioma predeterminado
-    supportedLngs: ["en", "es"], // Idiomas soportados
-    debug: true, // Cambia a true para depuración
+    fallbackLng: "en",
+    supportedLngs: ["en", "es"],
+    debug: false,
     interpolation: {
-      escapeValue: false, // React ya maneja la seguridad
+      escapeValue: false,
     },
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json", // Ruta de los archivos de traducción
+      loadPath: "/locales/{{lng}}/translation.json", // Ruta de traducciones
     },
     detection: {
-      order: ["querystring", "cookie", "localStorage", "navigator"], // Detecta el idioma
-      caches: ["cookie", "localStorage"], // Almacena el idioma detectado
+      order: ["querystring", "cookie", "localStorage", "navigator"],
+      caches: ["cookie", "localStorage"],
     },
   });
 
