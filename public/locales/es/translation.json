@@ -1,7 +1,11 @@
 {
+  "titlePuesto4": "Software Engineer",
+  "descriptionPuesto4": "Desarrollo de microservicios desde fase inicial hasta producción. Definición de modelo de datos y comunicación entre microservicios. Implementación de Cultura DevOps y buenas practicas.",
+  "datePuesto4": "2025 ",
+
   "titlePuesto1": "FullStack Developer",
   "descriptionPuesto1": "En 2023 pasé a un proyecto de Inditex en el que trabajamos con tecnolgías actuales como java 21, docker, github, sonar, git, postgreSQL, DB2 ( en algunos proyectos ). En este proyecto formo parte de un equipo muy grande de 40 personas en el que trabajamos usando SCRUM y llevamos a cabo nuevos desarrollos para Inditex. Priorizando la calidad del codigo y la eficiencia de las consultas para poder soportar tal volumen de carga.",
-  "datePuesto1": "Actualidad",
+  "datePuesto1": "2024",
   "titlePuesto2": "FullStack Developer",
   "descriptionPuesto2": "En Indra, comencé trabajando mi primer año para un cliente con el que trabajamos en un equipo de 12 personas, llevando metodologías ágiles, ahí trabajamos con Angular para la capa front y spring boot, spring JPA, spring hibernate para la capa backend. Base de datos oracle. Git para control de versiones, github, actions, sonar y docker",
   "datePuesto2": "2023 ",
