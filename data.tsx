@@ -45,6 +45,13 @@ export const itemsNavbar = [
 
 export const dataAboutPage = [
     {
+        id: 4,
+        title: "titlePuesto4",
+        subtitle: "CaixaBank Tech",
+        description: "descriptionPuesto4",
+        date: "datePuesto4",
+    },
+    {
         id: 1,
         title: "titlePuesto1",
         subtitle: "Indra",
@@ -70,21 +77,21 @@ export const dataAboutPage = [
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 2,
+        endCounter: 3,
         text: "counterYears",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
-        endCounter: 2,
+        endCounter: 3,
         text: "counterClients",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 5,
+        endCounter: 6,
         text: "counterProjects",
         lineRight: true,
         lineRightMobile: true,
